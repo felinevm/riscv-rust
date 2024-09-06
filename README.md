@@ -1,21 +1,19 @@
-# riscv-rust
-
-[![Build Status](https://travis-ci.org/takahirox/riscv-rust.svg?branch=master)](https://travis-ci.org/takahirox/riscv-rust)
-[![Crate](https://img.shields.io/crates/v/riscv_emu_rust.svg)](https://crates.io/crates/riscv_emu_rust)
-[![npm version](https://badge.fury.io/js/riscv_emu_rust_wasm.svg)](https://badge.fury.io/js/riscv_emu_rust_wasm)
+# FelineVM's RISC-V Rust emulator
 
 riscv-rust is a [RISC-V](https://riscv.org/) processor and peripheral devices emulator project written in Rust and compiled to WebAssembly. You can import RISC-V emulator into your Rust or JavaScript project. Refer to the [Slides](https://docs.google.com/presentation/d/1qeR6KMSaJTR0ZSa2kLxgcBuc_zBo3l-kYbOpq1Wqmi0/edit?usp=sharing) for more detail.
 
 ## Online Demo
 
-You can run Linux or xv6 on the emulator in your browser. [Online demo is here](https://takahirox.github.io/riscv-rust/wasm/web/index.html)
+You can run Linux or xv6 on the emulator in your browser.
 
 ## Screenshots
 
 ![animation](./screenshots/animation.gif)
 ![debugger](./screenshots/debugger.gif)
 
-## Documents
+## Outdated Documents
+
+These documents are from upstream, and will not reflect new changes.
 
 * [Document](https://docs.rs/riscv_emu_rust/0.2.0/riscv_emu_rust/)
 
@@ -50,22 +48,10 @@ etc...
 
 The emulator supports almost all instructions listed above but some instructions which are not used in Linux or xv6 are not implemented yet. Your contribution is very welcome.
 
-## How to import into your Rust project
-
-The emulator module is released at [crates.io](https://crates.io/crates/riscv_emu_rust
-). Add the following line into Cargo.toml of your Rust project.
-
-```
-[dependencies]
-riscv_emu_rust = "0.2.0"
-```
-
-Refer to [Document](https://docs.rs/riscv_emu_rust/0.2.0/riscv_emu_rust/struct.Emulator.html) for the API.
-
 ## How to build core library locally
 
 ```sh
-$ git clone https://github.com/takahirox/riscv-rust.git
+$ git clone https://github.com/felinevm/riscv-rust.git
 $ cd riscv-rust
 $ cargo build --release
 ```
@@ -93,11 +79,11 @@ $ cargo run $path_to_riscv_tets/isa/rv32ui-p-add -n
 
 ## How to import and use WebAssembly RISC-V emulator in a web browser
 
-See [wasm/web](https://github.com/takahirox/riscv-rust/tree/master/wasm/web)
+See [wasm/web](https://github.com/felinevm/riscv-rust/tree/master/wasm/web)
 
 ## How to install and use WebAssembly RISC-V emulator npm package
 
-See [wasm/npm](https://github.com/takahirox/riscv-rust/tree/master/wasm/npm)
+See [wasm/npm](https://github.com/felinevm/riscv-rust/tree/master/wasm/npm)
 
 ## Links
 
